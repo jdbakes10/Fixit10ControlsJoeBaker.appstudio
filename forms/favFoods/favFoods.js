@@ -11,11 +11,10 @@ lstFavFoods.onclick=function(){
   if (typeof(choice) == "object") {
   return
 } else {
-  let textChoice = NSB.$("lstFoods_" + choice).textContent
+  let textChoice = NSB.$("lstFavFoods_" + choice).textContent
   lblFood.value = `You picked ${textChoice}- that is a great choice!`
 }
-
-
+}
 
 //shortcut
 btndessertVoting.onclick=function(){

@@ -14,5 +14,10 @@ selExercises.onfocusout=function(){
 
 
 btnSubmitEx.onclick=function(){
-  lblExercises.value = `You chose ${selExercises.item} `
+if (selExercises.value == "situps,plank") {
+  NSB.MsgBox("You chose situps and planks. Those are the two core exercises")
+} else {
+  NSB.MsgBox("You didn't pick the two core exercises")  
+  }
 }
+
